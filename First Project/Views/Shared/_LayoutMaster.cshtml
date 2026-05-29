@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <style>
+    header,footer{
+        background-color:blueviolet;
+        color:white;
+    }    
+    section{
+        background-color:darkgray;
+    }
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">Iqra University</div>
+            <div class="col-sm-6">
+                <nav>
+                    @* Menu List *@
+                    <ul class="nav-item">
+                        <li><a href="#" class="nav-link">Home</a></li>
+                        <li><a href="#" class="nav-link">About Us</a></li>
+                        <li><a href="#" class="nav-link">Services</a></li>
+                        <li><a href="#" class="nav-link">Gallery</a></li>
+                        <li><a href="#" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-6">Contact US</div>
+        </div>
+    </header>
+    <section class="container-fluid">
+        @RenderBody()
+        <h1 class="h1">First Dot Net Website</h1>
+    </section>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Home</h2>
+            </div>
+            <div class="col-sm-4">
+                <h2>About Us</h2>
+            </div>
+            <div class="col-sm-4">
+                <h2>Services</h2>
+            </div>
+            <div class="col-sm-4">
+                <h2>Gallery</h2>
+            </div>
+            <div class="col-sm-4">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
